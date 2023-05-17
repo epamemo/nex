@@ -7,11 +7,13 @@ export default function AddProduct() {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [modal, setModal] = useState(false);
+  const [isMutating, setIsMutating] = useState(false);
 
   const router = useRouter();
 
   async function handleSubmit(e: SyntheticEvent) {
     e.preventDefault();
+    setIsMutating(true);
     await fetch("http://localhost:5000/products", {
       method: "POST",
       headers: {
@@ -22,6 +24,8 @@ export default function AddProduct() {
         price: price,
       }),
     });
+
+    setIsMutating(false);
     setTitle("");
     setPrice("");
     router.refresh();
