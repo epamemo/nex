@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "price": 41300
+    },
+    {
+      "id": 2,
+      "title": "Product 2 312 Baru",
+      "price": 2200
+    },
+    {
+      "id": 3,
+      "title": "Product 2",
+      "price": 11300
+    },
+    {
+      "title": "AFCA",
+      "price": "13453",
+      "id": 4
+    },
+    {
+      "title": "RRRR",
+      "price": "323555",
+      "id": 5
+    }
+  ]
+}
